@@ -1,0 +1,29 @@
+{
+  "name": "solana-memecoin-bot",
+  "version": "1.0.0",
+  "description": "Automated Solana memecoin trading bot with risk management",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["solana", "memecoin", "trading", "bot", "crypto"],
+  "author": "OpenClaw Agent",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.87.6",
+    "@solana/spl-token": "^0.4.1",
+    "bs58": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "chalk": "^4.1.2",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/node-fetch": "^2.6.9",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  }
+}
